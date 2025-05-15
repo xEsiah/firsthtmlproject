@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCENDING FAFAFAFAFAF</title>
+    <meta name="description" content="Atteignez vos objectifs !">
+    <link rel="icon" href="icone.png" alt="Icone site ASCENDING LEGENDS">
+    <link rel="stylesheet" href="index.css">
+<!-- Head  -->
+</head>
+
+<body>
+<!-- Création de la bannière en modifiant le header -->
+    <header>
+        <div><img id="banniere" src="banniere.jpg" alt="Bannière site ASCENDING LEGENDS">
+            <div><p id="slogan" ><u>-ASCENDING LEGENDS-</u></p></div>
+        </div>
+    </header>
+<!-- Création de boîtes et de sous-boîtes pour organiser les éléments -->    
+    <div class="items_container"> 
+        <ul class="item_title">
+            <h1 class="item_subtitle"><a href=#Desc><u>Boosting</a></u>*</h1>
+            <h2><i>1 à 3 division(s)</i></h2>
+            <h2><i>1 rang</i></h2>
+            <h2><i>2 rangs ou +</i></h2>
+            <img class="arrondie" src="Rang.png" alt="Illustration rangs" width="101%">
+                <figcaption><i>Boosting pour tous les élos!</i></figcaption>
+        </ul>
+<!-- Codification des caractéristiques des texte en fonction du rôle de ces derniers-->
+        <ul class="item_title">
+            <h1 class="item_subtitle"><u><a href=#Desc>Coaching</a></u>*</h1>
+            <h1 class="item_subsubtitle"><u>Sessions</a></u></h1>
+            <h2><i>Session 1h</i></h2>
+            <h2><i>Session 3h</i></h2>
+            <h1 class="item_subsubtitle"><u>Abonnements</a></u></h1>
+            <h2><i>1h/ semaine</i></h2>
+            <h2><i>3h/ semaine</i></h2>
+            <h2><i>Grinding</i></h2>
+        </ul> 
+        <ul class="item_title">
+            <h1 class="item_subtitle"><u><a href=#Desc>Fresh accounts</a></u>*</h1>
+            <h2><i>MMR Bronze/Silver</i></h2>
+            <h2><i>MMR Gold/Platine</i><h2>
+            <h2><i>MMR Emeraude/Diamant</i></h2>
+            <img class="arrondie" src="Fresh_acc.png" alt="'Illustration fresh account" width="86.5%">
+                <figcaption><i>Recevez un compte immaculé!</i></figcaption>
+        </ul>
+    </div>
+
+<!-- Insertion d'une bannière de transition pour rendre le site plus digeste -->
+    <img id="Bannierebot" src="Aatrox.png" alt="Banniere de transition" width="100%">
+    <h3 id="Desc">.</h3>
+
+<!-- Détails des services préstatés -->
+    <div class="items_container">    
+        <ul>
+            <h1 class="colorsoustitre1" id="Boosting"><u>Boosting</u></h1>
+            <h3><u>1 à 3 divisions:</u> 30€ - 100€</h3>
+            <h3><u>1 rang:</u> 120€</h3>
+            <h3><u>2 rangs ou plus:</u> 200€ - </h3>
+        </ul>
+        <ul>
+            <h1 class="colorsoustitre1" id="Coaching"><u>Coaching</u></h1>
+            <h2 class="colorsoustitre2"><u>Sessions</u></h2>
+            <h3><u>Session 1h:</u> Un coach spectate une de tes games et te review.</h3>
+            <h3><u>Session 3h:</u> + un cours adapté à ton niveau de connaissance.</h3>
+            <h2 class="colorsoustitre2"><u>Abonnements</u></h2>
+            <h3><u>Grinding:</u> Fais toi coach chaque semaine à ton rythme à un prix broken!</h3>
+        </ul>
+        <ul>
+            <h1 class="colorsoustitre1" id="FreshAcc"><u>Fresh accounts</u></h1>
+            <h3><u>MMR Bronze/Argent:</u> 5€ - 15€</h3>
+            <h3><u>MMR Or/Platine:</u> 20€ - 30€</h3>
+            <h3><u>MMR Em/Diamant:</u> 35€ - 50€</h3>
+        </ul>
+    </div>
+    
+<!-- Zone de formulaire -->
+    <h1 id="marginleft" class="colorsoustitre1"><u>Passe ta commande ici!</u></h1>
+    <h3 id="marginleft" class="colorsoustitre2"><u><i>Livraison sous 24h!</i></u></h3>
+    <fieldset> <!-- Création du champ de formulaire-->
+        <legend><h2 class="colorsoustitre1">Sélectionnez vos produits :</h2></legend>
+        <div class="formulaire">
+            <div>
+                <h2 class="colorsoustitre2"><u>Boosting</u></h2>
+                <input type="checkbox"> 1 à 3 divisions
+                <input type="checkbox"> 1 rang
+                <input type="checkbox"> 2 rangs ou plus
+            </div>
+            <div>
+                <h2 class="colorsoustitre2"><u>Coaching</u></h2>
+                <input type="checkbox"> Session 1h
+                <input type="checkbox"> Session 3h
+                <input type="checkbox"> Grinding
+            </div>
+            <div>
+                <h2 class="colorsoustitre2"><u>Fresh accounts</u></h2>
+                <input type="checkbox"> MMR Bronze/Argent
+                <input type="checkbox"> MMR Or/Platine
+                <input type="checkbox"> MMR Em/Diamant
+            </div>
+        </div>
+        <legend><h2 id=margin class="colorsoustitre2">Tes informations:</h2></legend> 
+        <div class="formulaireA">
+            <div>    
+                <label for="nom">Prénom :</label>
+                <input type="text" id="nom" name="nom" required><br>
+            </div>
+            <div>    
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required><br>
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required><br>
+            </div>
+            <div>
+            <a id="Commande" href="Projet11.html" target="_blank">Passer commande</a>
+            </div>
+        </div>
+        </fieldset>
+<!-- Copyrights -->
+        <h5><i>&COPY; Copyright tous droits réservés Esiah </i><a href="index.html" id="Retour">[]</a></h5>
+</body>
+</html>
+
+
+<!-- -->
