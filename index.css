@@ -206,3 +206,39 @@ input[type="email"]:hover {
   background: radial-gradient(rgb(108, 66, 29), rgb(168, 102, 45));
   color: rgb(0, 0, 0);
 }
+#popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    rgba(190, 95, 11, 0.829),
+    rgba(255, 133, 12, 0.154)
+  );
+  padding: 30px;
+  border: 2px solid #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 9999;
+}
+
+#popup button {
+  margin-top: 15px;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9998;
+}
+
+#newIndex {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgb(110, 89, 75), rgb(43, 35, 29));
+}

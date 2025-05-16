@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASCENDING LEGENDS</title>
     <meta name="description" content="Atteignez vos objectifs !">
-    <link rel="icon" href="icone.png" alt="Icone site ASCENDING LEGENDS">
+    <link rel="icon" href="images/icone.png" alt="Icone site ASCENDING LEGENDS">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 <!-- Head  -->
 </head>
 
 <body>
+    <div id="overlay"></div>
+
+  <div id="popup">
+    <p>Cliquer ici afin d'afficher le site amélioré</p>
+    <button onclick="newVersion()">Voir la version revisitée !</button>
+    <button onclick="closePopup()">Fermer le popup</button>
+  </div>
 <!-- Création de la bannière en modifiant le header -->
     <header>
-        <div><img id="banniere" src="banniere.jpg" alt="Bannière site ASCENDING LEGENDS">
+        <div><img id="banniere" src="images/banniere.jpg" alt="Bannière site ASCENDING LEGENDS">
             <div><p id="slogan" ><u>-ASCENDING LEGENDS-</u></p></div>
         </div>
     </header>
@@ -25,7 +33,7 @@
             <h2><i>1 à 3 division(s)</i></h2>
             <h2><i>1 rang</i></h2>
             <h2><i>2 rangs ou +</i></h2>
-            <img class="arrondie" src="Rang.png" alt="Illustration rangs" width="101%">
+            <img class="arrondie" src="images/Rang.png" alt="Illustration rangs" width="101%">
                 <figcaption><i>Boosting pour tous les élos!</i></figcaption>
         </ul>
 <!-- Codification des caractéristiques des texte en fonction du rôle de ces derniers-->
@@ -44,13 +52,13 @@
             <h2><i>MMR Bronze/Silver</i></h2>
             <h2><i>MMR Gold/Platine</i><h2>
             <h2><i>MMR Emeraude/Diamant</i></h2>
-            <img class="arrondie" src="Fresh_acc.png" alt="'Illustration fresh account" width="86.5%">
+            <img class="arrondie" src="images/Fresh_acc.png" alt="'Illustration fresh account" width="86.5%">
                 <figcaption><i>Recevez un compte immaculé!</i></figcaption>
         </ul>
     </div>
 
 <!-- Insertion d'une bannière de transition pour rendre le site plus digeste -->
-    <img id="Bannierebot" src="Aatrox.png" alt="Banniere de transition" width="100%">
+    <img id="Bannierebot" src="images/Aatrox.png" alt="Banniere de transition" width="100%">
     <h3 id="Desc">.</h3>
 
 <!-- Détails des services préstatés -->
@@ -117,10 +125,11 @@
                 <input type="email" id="email" name="email" required><br>
             </div>
             <div>
-            <a id="Commande" href="Projet11.html" target="_blank">Passer commande</a>
+            <a id="Commande" href="bisIndex.html" target="_blank">Passer commande</a>
             </div>
         </div>
         </fieldset>
+        <a id="toNewIndex" href="newIndex.html" target="_blank">Aller sur le site revisité</a>
 <!-- Copyrights -->
         <h5><i>&COPY; Copyright tous droits réservés Esiah </i><a href="index.html" id="Retour">[]</a></h5>
 </body>
