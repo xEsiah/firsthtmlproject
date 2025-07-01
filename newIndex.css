@@ -2,16 +2,21 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #ff8c42 0%, #111 100%);
-  color: #eee;
+  background: linear-gradient(to bottom, #fdd9b5 0%, #d6c1ab 100%);
+  color: #fefefe;
   font-family: "Segoe UI", sans-serif;
   min-height: 100vh;
 }
 
 main {
+  border-radius: 12px;
+  margin-top: 5%;
+  margin-right: 3%;
+  margin-left: 3%;
   padding: 2rem;
   display: grid;
   gap: 2rem;
+  background-color: #fef9f3;
 }
 
 /* ===== Banner ===== */
@@ -41,13 +46,21 @@ main {
   align-items: center;
 }
 
+/* ===== Transition Banner ===== */
+.transition-banner img {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin: 3rem 0 1rem;
+}
 .banner-title {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 0.5rem;
   transform: translateY(-10%);
-  background: linear-gradient(90deg, #fca311, #ff8c42);
+  background: linear-gradient(90deg, #f7b267, #f79d65);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -63,8 +76,11 @@ main {
 }
 
 .nav-links li a {
-  font-weight: 500;
-  background-image: linear-gradient(90deg, #fca311, #ff8c42);
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  background-image: linear-gradient(90deg, #f7b267, #f79d65);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -76,31 +92,32 @@ main {
 
 .nav-links li a:hover {
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(90deg, #fca311, #ff8c42);
+  background-image: linear-gradient(90deg, #f7b267, #f79d65);
   background-clip: text;
-  border-color: #ff8c42;
+  border-color: #f79d65;
 }
 
 /* ===== Service Modules ===== */
 .service {
-  background: #1a1a1a;
+  background-image: none;
+  background: #292524; /* ancien fond uni */
   border-radius: 12px;
-  border: 1px solid #2a2a2a;
-  border-bottom: 4px solid #ff8c42;
+  border: 1px solid #4b4b4b;
+  border-bottom: 4px solid #f7b267;
   padding: 2rem;
   text-align: center;
-  box-shadow: 0 8px 20px -6px rgba(255, 140, 66, 0.4);
+  box-shadow: 0 8px 20px -6px rgba(247, 157, 101, 0.3);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .service:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px -4px rgba(255, 140, 66, 0.6);
+  box-shadow: 0 12px 24px -4px rgba(247, 157, 101, 0.5);
 }
 
 .service h2,
 .service h3 {
-  color: #ff8c42;
+  color: #f7b267;
   margin-bottom: 1rem;
 }
 
@@ -113,146 +130,31 @@ main {
 }
 
 .option-card {
-  background: #2a2a2a;
+  background: #3d3b3a;
   padding: 1rem 1.5rem;
   border-radius: 8px;
-  color: #eee;
+  color: #fefefe;
   font-weight: 500;
-  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.15);
-  border-bottom: 2px solid #ff8c42;
+  box-shadow: 0 4px 12px rgba(247, 157, 101, 0.15);
+  border-bottom: 2px solid #f7b267;
   transition: all 0.3s ease;
   min-width: 160px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .option-card:hover {
   transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 10px 20px rgba(255, 140, 66, 0.4);
-  background: #333;
-}
-
-/* ===== Dynamic Pricing Reveal ===== */
-.service-pricing {
-  margin-top: 1.5rem;
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 0.3s ease, max-height 0.3s ease;
-}
-
-.service:hover .service-pricing {
-  opacity: 1;
-  max-height: 300px;
-}
-
-.service-pricing p {
-  margin: 0.25rem 0;
-  color: #ccc;
-}
-
-.service-pricing u {
-  color: #ff8c42;
-}
-
-/* ===== Transition Banner ===== */
-.transition-banner img {
-  display: block;
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  margin: 3rem 0 1rem;
-  border-radius: 12px;
-}
-
-/* ===== Formulaire ===== */
-.form-section {
-  background: #1a1a1a;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(255, 140, 66, 0.15);
-  margin-top: 2rem;
-}
-
-.formulaire,
-.formulaireA {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-
-.formulaire div,
-.formulaireA div {
-  flex: 1 1 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-label,
-input[type="text"],
-input[type="email"] {
-  color: #fff;
-  font-size: 1rem;
-}
-
-input {
-  padding: 0.5rem;
-  border: 1px solid #ff8c42;
-  border-radius: 6px;
-  background: #2a2a2a;
-  color: #fff;
-}
-
-#Commande {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background: #ff8c42;
-  color: #111;
-  font-weight: bold;
-  border-radius: 6px;
-  text-align: center;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-#Commande:hover {
-  background: #ffa94d;
-}
-
-/* ===== Footer ===== */
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: transparent;
-  font-size: 0.9rem;
-  color: #aaa;
-}
-
-footer a {
-  display: block;
-  margin-top: 0.5rem;
-  color: #ff8c42;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #ffa94d;
-  text-decoration: underline;
-}
-
-.option-card {
-  position: relative;
-  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(247, 157, 101, 0.4);
+  background: #4f4b49;
 }
 
 .option-price {
   display: block;
   opacity: 0;
   font-size: 0.85rem;
-  color: #ffb56b;
+  color: #ffd2a4;
   margin-top: 0.5rem;
   transform: translateY(5px);
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -261,4 +163,125 @@ footer a:hover {
 .option-card:hover .option-price {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ===== Formulaire ===== */
+.form-section {
+  background: #292524;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(247, 157, 101, 0.15);
+  margin-top: 2rem;
+}
+
+fieldset {
+  border: 1px solid #f7b267;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+legend h2,
+legend h3 {
+  margin: 0;
+  color: #f7b267;
+}
+
+.formulaire,
+.formulaireA {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 4rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.formulaire div,
+.formulaireA div {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 0.7rem 1rem;
+  border: 1px solid #f7b267;
+  border-radius: 8px;
+  background: #3d3b3a;
+  color: #fff8f1;
+  font-size: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #fdd9b5;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.1);
+}
+
+#Commande {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #f7b267;
+  color: #1e1e1e;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+}
+
+#Commande:hover {
+  background: #ffd2a4;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: transparent;
+  font-size: 0.9rem;
+  color: #fff8f1;
+}
+
+footer a {
+  display: block;
+  margin-top: 0.5rem;
+  color: #ffd2a4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff8f1;
+  text-decoration: underline;
+}
+
+.gap {
+  height: 2rem;
+}
+
+.form-container {
+  background: #fef9f3;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-right: 5%;
+  margin-left: 5%;
 }
