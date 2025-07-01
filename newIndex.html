@@ -3,58 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NEW ASCENDING LEGENDS</title>
+    <title>ASCENDING LEGENDS</title>
     <meta name="description" content="Atteignez vos objectifs !" />
-    <link
-      rel="icon"
-      href="images/icone.png"
-      alt="Icone site ASCENDING LEGENDS"
-    />
+    <link rel="icon" href="images/icone.png" />
     <link rel="stylesheet" href="newIndex.css" />
-    <script src="index.js"></script>
-    <!-- Head  -->
+    <script src="index.js" defer></script>
   </head>
 
   <body>
-    <!-- Création de la bannière en modifiant le header -->
-    <header>
-      <h1>ASCENDING LEGENDS</h1>
+    <!-- Bannière principale -->
+    <header class="banner">
       <img
-        id="banniere"
         src="images/banniere.jpg"
-        alt="ASCENDING LEGENDS's Banner"
+        alt="Bannière ASCENDING LEGENDS"
+        class="banner-img"
       />
+      <div class="banner-content">
+        <h1 class="banner-title">-ASCENDING LEGENDS-</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#Boosting">Boosting</a></li>
+            <li><a href="#Coaching">Coaching</a></li>
+            <li><a href="#FreshAcc">Accounts</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <!-- Création de boîtes et de sous-boîtes pour organiser les éléments -->
-    <ul>
-      Boosting
-      <li>1 à 3 division(s)</li>
-      <li>1 rang</li>
-      <li>2 ranges ou plus</li>
-    </ul>
-    <ul>
-      Coaching
-      <li>Session 1h</li>
-      <li>Session 2h</li>
-      Abonnements
-      <li>1h/ semaine</li>
-      <li>2h/ semaine</li>
-      <li>Grinding</li>
-    </ul>
-    <ul>
-      Fresh accounts
-      <li>MMR Bronze/Silver</li>
-      <li>MMR Gold/Platine</li>
-      <li>MMR Emeraude/Diamant</li>
-    </ul>
-    <!-- Codification des caractéristiques des texte en fonction du rôle de ces derniers-->
 
-    <!-- Copyrights -->
+    <main>
+      <!-- Modules de service -->
+      <section class="service" id="Boosting">
+        <h2>Boosting</h2>
+        <div class="service-options">
+          <div class="option-card">
+            1 à 3 division(s)
+            <span class="option-price">30€ - 100€</span>
+          </div>
+          <div class="option-card">
+            1 rang
+            <span class="option-price">120€</span>
+          </div>
+          <div class="option-card">
+            2 rangs ou plus
+            <span class="option-price">200€ +</span>
+          </div>
+        </div>
+      </section>
 
-    <a href="index.html" id="Retour"
-      >&COPY; Copyright tous droits réservés Esiah</a
-    >
+      <section class="service" id="Coaching">
+        <h2>Coaching</h2>
+        <div class="service-options">
+          <div class="option-card">
+            Session 1h
+            <span class="option-price">Review de ta game</span>
+          </div>
+          <div class="option-card">
+            Session 2h
+            <span class="option-price">+ Cours personnalisé</span>
+          </div>
+        </div>
+        <h3>Abonnements</h3>
+        <div class="service-options">
+          <div class="option-card">
+            1h / semaine
+            <span class="option-price">Suivi régulier</span>
+          </div>
+          <div class="option-card">
+            2h / semaine
+            <span class="option-price">Progression rapide</span>
+          </div>
+          <div class="option-card">
+            Grinding
+            <span class="option-price">Coaching intensif</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="service" id="FreshAcc">
+        <h2>Fresh Accounts</h2>
+        <div class="service-options">
+          <div class="option-card">
+            MMR Bronze/Silver
+            <span class="option-price">5€ - 15€</span>
+          </div>
+          <div class="option-card">
+            MMR Gold/Platine
+            <span class="option-price">20€ - 30€</span>
+          </div>
+          <div class="option-card">
+            MMR Emeraude/Diamant
+            <span class="option-price">35€ - 50€</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Liens & copyrights -->
+    <footer>
+      <p>&copy; 2025 ASCENDING LEGENDS - Tous droits réservés - Esiah</p>
+    </footer>
   </body>
 </html>
-
-<!-- -->
